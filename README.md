@@ -1,12 +1,12 @@
 
-## Map Filter
+## Remove Phantom obsticles from point cloud maps ( Python )
 
 Nihal Solomon Soans
 
 nihalsoans91@uga.edu
 
 
-We solve the problem of removing obstabe noise using a ﬁlter of size 41 x 41 as askedin the problem statement. As shown in Figure 2 and 3 overthe whole image. This ﬁlter slides along the image similar tohow a convolution Neural Network works. The ﬁlter checksif there is any cluster of objects near it if there is it discard thethat iteration of the ﬁlter and moves to the next one. Figure2 will help understand this problem. All cells in Figure 1 and 2 colored in green are obstacles and white are empty and onescolored in grey are unexplored. In our experiment we use a 41 by 41 ﬁlter size but for simplicity we use a ﬁlter of size 6by 6.
+We solve the problem of removing obsticle noise using a ﬁlter of size 41 x 41. As shown in Figure 2 and 3 overthe whole image. This ﬁlter slides along the image similar tohow a convolution Neural Network works. The ﬁlter checksif there is any cluster of objects near it if there is it discard thethat iteration of the ﬁlter and moves to the next one. Figure2 will help understand this problem. All cells in Figure 1 and 2 colored in green are obstacles and white are empty and onescolored in grey are unexplored. In our experiment we use a 41 by 41 ﬁlter size but for simplicity we use a ﬁlter of size 6by 6.
 
 Figure 1: Filter values that are got from the image which does not satisfy the two conditions
 ![Im1](images/nodelete.jpg)
