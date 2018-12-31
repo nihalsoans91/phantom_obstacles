@@ -17,3 +17,24 @@ Once a pixel of number 255 or an object is discovered inthis target area. we the
 
 Figure 2: Filter values that are got from the image which satisﬁes the two conditions
 ![Im1](images/delete.jpg)
+
+### Execution or Usage
+
+This can be addded directly to your code
+
+#### First initialise the code
+```python
+import rem_noise from rem_noise
+obj=rem_noise()
+```
+#### To execute 
+```python
+postproc=obj.remove_phan_obj(map_as_an_numpy_array)
+```
+postproc will have the map which do not have any phantom obsticles. Which is a numpy array of size of the input image.
+
+```python
+obj.save(location.jpg)
+```
+
+Will save the image in jpg format at location
